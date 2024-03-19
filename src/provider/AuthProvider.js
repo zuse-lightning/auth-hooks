@@ -16,6 +16,7 @@ export const AuthProvider = ({ children }) => {
         } else {
             setUser({ username: user, permissions: ["view_about"] });
         }
+        navigate(redirectPath, { replace: true });
     };
     const logout = () => {
         setUser({ username: "", permissions: [] });

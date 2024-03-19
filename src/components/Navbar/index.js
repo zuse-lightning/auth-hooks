@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../../provider/AuthProvider";
 
-export const Navbar = () => {
+const Navbar = () => {
     const { user } = useAuth();
     return (
         <nav>
@@ -14,3 +14,5 @@ export const Navbar = () => {
         </nav>
     );
 }
+
+export default Navbar;
